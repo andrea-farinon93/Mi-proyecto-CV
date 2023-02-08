@@ -62,8 +62,18 @@
     #sinsubrayado{
         font-size: 25px;  
     }
-  }
+  
+    .progress-bar-green {
+        background-color: rgb(8, 221, 17) !important;
+      }
 
+      .progress-bar-orange {
+        background-color: rgb(226, 174, 31) !important;
+      }
+
+      .progress-bar-blue {
+        background-color: rgb(43, 26, 189) !important;
+      }
   /*
 h1{
     font-family: 'Lora', serif;
