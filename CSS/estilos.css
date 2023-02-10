@@ -5,6 +5,20 @@
     content: "";
     clear: both;
     display: table;
+    padding:25px;
+  }
+
+  .row section {
+    padding: 60px;
+  }
+
+  .row aside {
+    margin-top: 60px;
+    margin-left: 0%;
+  }
+
+  #formacion {
+    padding-top: 0px;
   }
 
   /*para computadora*/
@@ -52,8 +66,12 @@
     .col-12 {width: 100%;}
   }
 
-
+  
+#fondo {
+  background-image : url(../imagenes/44.png);
+  background-clip:border-box;
 }
+
     .progress-bar-green {
         background-color: rgb(8, 221, 17) !important;
       }
@@ -65,25 +83,12 @@
       .progress-bar-blue {
         background-color: rgb(43, 26, 189) !important;
       }
-  /*
+  
 h1{
     font-family: 'Lora', serif;
     font-size: 4em;
     text-align: left;
-    background-color: brown;
-    */
-
-
-#blue { 
-    background-color: blueviolet;
 }
-
-#comp{
-    padding:20px;
-    margin:0px;
-    border: 2px solid; 
-}
-
 
 hr {
 	height: 6px;
@@ -97,11 +102,21 @@ hr {
 );
 }
 
-ondo {
-    background-image: url("C:\Users\afari\OneDrive\Escritorio\mis documentos html\imagenes\66.png");
-}
+.redes-sociales img {
+  border: 1px solid #b9aeae;
+  border-radius: 45px;
+  padding: 5px #eed4d4;
+  width: 70px;
+		}
 
-#fondo {
-  background-image : url(../imagenes/44.png);
-  background-clip:border-box;
-}
+    #boton-competencias{
+      border: none;
+      background: radial-gradient(#e9afaf, #c2c4dd);
+      padding: 15px 70px 15px 70px;
+      color: rgb(41, 40, 40);
+      font-family: 'Lora', serif;
+      font-family: 'Public Sans', bold 900;
+      font-size: large;
+
+      }
+    
