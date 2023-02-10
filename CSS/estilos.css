@@ -33,14 +33,7 @@
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
-
-    #perfil {
-        width:35%;
-    }
     
-    #sinsubrayado{
-        font-size: 20px;  
-    }
   }
   
    /* para computadora: */
@@ -57,12 +50,10 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+  }
 
-    }
-    #sinsubrayado{
-        font-size: 25px;  
-    }
-  
+
+}
     .progress-bar-green {
         background-color: rgb(8, 221, 17) !important;
       }
@@ -93,13 +84,24 @@ h1{
     border: 2px solid; 
 }
 
-#sinsubrayado {
-    padding: 10px;
-    text-decoration: none;
-    font-family: 'Lora', serif;
-    display:flex;
-    justify-content: center;
-    font-size: 30px;  
+
+hr {
+	height: 6px;
+	background: linear-gradient(
+    to right,
+    black 0%,    
+    blue 25%,    
+    gold 50%,     
+    green 75%,   
+    red 100%     
+);
 }
 
-    
+ondo {
+    background-image: url("C:\Users\afari\OneDrive\Escritorio\mis documentos html\imagenes\66.png");
+}
+
+#fondo {
+  background-image : url(../imagenes/44.png);
+  background-clip:border-box;
+}
