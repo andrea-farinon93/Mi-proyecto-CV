@@ -176,3 +176,44 @@ hr {
       padding-bottom:0px;
       margin-bottom:0px;
     }
+    
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+    }
+    
+
+
+
+article a img {
+  width: 200px;
+}
+
+article a {
+  font-size: 10px;
+}
+
+footer{
+  padding-top: 30px;
+  background-color: #cabeca;
+  border-top: #604da3;
+  border-style: ridge;
+border-width: 5px;
+}
+
+#servicios{
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    color:#000;
+}
+    .flex{
+      display:flex;
+      justify-content: center;
+    }
+
+    #contacto {
+      text-align: center;
+    }
