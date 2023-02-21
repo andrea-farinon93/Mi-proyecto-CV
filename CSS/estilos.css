@@ -87,6 +87,8 @@
 #fondo {
   background-image : url(../imagenes/44.png);
   background-clip:border-box;
+  border-style: ridge;
+  border-width: 5px;
 }
 
     .progress-bar-green {
@@ -217,3 +219,56 @@ border-width: 5px;
     #contacto {
       text-align: center;
     }
+
+    form {
+      width: 400px;
+      max-width: 100%;
+      margin:auto;
+      margin-top: 30px;
+      padding: 20px;
+      box-shadow: 0 0 20px 1px #0000004d;
+      position:relative;
+    }
+
+    .formtitulo {
+      font-size:larger;
+      text-align: center;
+      color:#202020
+    }
+
+    .forminput, .formlabel, .enviar {
+      display:block;
+      width: 100%;
+      font-size: 20px;
+    }
+
+    .forminput{
+      background: #d8d4e6;
+      opacity: 0.6;
+      padding: 20px;
+      border: 1px solid #202020;
+      margin: 60px 0px 10px 0px;
+    }
+
+    .formlabel {
+      padding-left: 15px;
+      position:absolute;
+      margin-top: -60px;
+      z-index: -20;
+      transition:all 0,3s;
+    }
+
+    .enviar {
+      background-color: #bcd2e6;
+      opacity: 0.8;
+      cursor: pointer;
+      color: #000000;
+    
+    }
+    
+    .forminput:focus + .formlabel{
+
+      margin-top: -110px;
+
+    }
+
