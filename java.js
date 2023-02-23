@@ -17,6 +17,43 @@ cancelar.addEventListener ("click", function() {
     document.getElementById('formulario').style.display= 'none';
   });
 
+  function validarform() {
+    let x = document.forms["formulario"]["input"].value;
+    if (x == "") {
+      alert("*Completar todos los campos");
+      return false;
+    }
+  }
+
+
+ document.getElementsByTagName("input").oninput = function() {myFunction()};
+
+  function myFunction() {
+    document.getElementsByTagName("label").innerHTML = "The value of the input field was changed.";
+  }
+
+  /*
+
+const v = document.querySelectorAll(".forminput");
+for (let i = 0; i < v.length; i++) {
+    v[i].addEventListener('input', modificar);
+}
+
+function modificar() {
+    document.querySelectorAll(".formlabel").style.display='none';
+}
+
+
+
+
+
+/*{modificar()};
+
+  function modificar() {
+    x.getElementsByTagName("formlabel").innerHTML = "The value of the input field was changed.";
+  }
+
+
 /*
 function fijar () {
     var value = document.getElementsByClassName('forminput').value;
