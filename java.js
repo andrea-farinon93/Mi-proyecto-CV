@@ -13,18 +13,20 @@ abrir.addEventListener("click", function() {
   });
 
 
+
+  
 cancelar.addEventListener ("click", function() {
     document.getElementById('formulario').style.display= 'none';
   });
 
 
 
-  var mio = document.getElementById("mio");
+ 
  
 
 
 
-  function validarform() {
+  function validar() {
     let x = document.forms["formulario"]["input"].value;
     if (x == "") {
       alert("*Completar todos los campos");
@@ -32,8 +34,32 @@ cancelar.addEventListener ("click", function() {
     }
   }
 
+  validar()
+  
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  var mio = document.getElementById("mio");
 
 
 
