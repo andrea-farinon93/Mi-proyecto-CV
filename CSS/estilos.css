@@ -286,7 +286,6 @@ border-width: 5px;
     }
 
     #cancelar {
-      display: block;
       width: 100%;
       border-right:#202020;
       border-radius: 5px;
@@ -362,27 +361,16 @@ display: block;
 
 
 
-.exito {
-background-color: greenyellow;
-padding: 30px;
-border-radius: 3px;
-margin: 30px;
-padding: 15px;
-height: 60px;
-line-height: 30px;
-display: none;
-}
-
 .exito_activo {
-  display: block;
+color: green;
+margin-top:  30px;
+padding-top: 15px;
+display: block;
+font-size: 15px;
 }
 
-#mano {
-position:absolute;
-z-index: 100;
-margin-left: 280px;
-margin-top: -70px;
-display: none;
+.exito {
+  display: none;
 }
 
 
@@ -402,15 +390,30 @@ color:red;
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 48
+  'opsz' 48,
 }
 
-#exclamacion {
+.error {
   display: none;
 }
 
-.exclamacion_activo {
+.error_activo {
+  margin-left: 40px;
   display: block;
+  color: red;
+}
+
+
+.stop {
+  display: none;
+}
+
+.stop_activo {
+  margin-top: -40px;
+  display: block;
+  z-index: 4;
+  position: absolute;
+  color: red;
 }
 
 /* .prueba1{
