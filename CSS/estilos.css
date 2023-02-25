@@ -264,11 +264,13 @@ border-width: 5px;
     }
 
     #enviar {
+      
       background-color: #414444;
       opacity: 0.8;
       cursor: pointer;
       color: #faf6f6;
       margin: 30px 0px 10px 0px;
+      border-radius: 3px;
     
     }
 
@@ -302,13 +304,7 @@ border-width: 5px;
     }
 
     
-  .prueba1{
-    color:#dd0fdd;
-  }
-
-  .prueba2{
-    color:rgb(5, 117, 214);
-  }
+ 
 
 .advertencias {
   width: 200px;
@@ -326,12 +322,19 @@ border-width: 5px;
   'opsz' 48
 }
 
-.validación {
+.validacion_activo {
+color: green;
 position:absolute;
 z-index: 100;
 margin-left: 320px;
 margin-top: -60px;
+display: block;
 }
+
+.validacion {
+  display: none;
+}
+
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -340,6 +343,7 @@ margin-top: -60px;
   'GRAD' 0,
   'opsz' 48
 }
+
 
 .advertencia {
   display: none;
@@ -374,24 +378,12 @@ margin-top: -70px;
 display: none;
 }
 
+/*
 .grupo_correcto .validación {
   color: green;
   opacity: 1;
-}
+} */
 
-.grupo_correcto .form_label {
-color:green;
-}
-
-.grupo_correcto .form_input {
-  border: 3px solid green;
-}
-
-
-.grupo_incorrecto .validación {
-  color:red;
-  opacity: 1;
-}
 
 .grupo_incorrecto .form_label {
 color:red;
@@ -401,3 +393,26 @@ color:red;
   border: 3px solid red;
 }
 
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#exclamacion {
+  margin-right: 10px;
+}
+
+/* .prueba1{
+    color:#dd0fdd;
+  }
+
+  .prueba2{
+    color:rgb(5, 117, 214);
+  }*/
+
+
+  
