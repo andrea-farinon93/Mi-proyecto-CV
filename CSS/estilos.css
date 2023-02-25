@@ -142,14 +142,20 @@ hr {
       font-family: 'Lora', serif;
       font-family: 'Public Sans', bold 900;
       font-size: large;
-      box-shadow: 0px 1px 0px hsl(310, 97%, 47%),
-0px 2px 0px hsl(310,97%,45%),
-0px 3px 0px hsl(310,97%,44%),
-0px 4px 0px hsl(310,97%,43%),
-0px 6px 0px hsl(310,97%,29%),
-0px 7px 10px #000;
+      box-shadow: 0px 2px 0px hsl(310, 97%, 47%),
+0px 4px 0px hsl(310,97%,45%),
+0px 6px 0px hsl(310,97%,44%),
+0px 8px 0px hsl(310,97%,43%),
+0px 10px 0px hsl(310,97%,29%),
+0px 11px 10px #000;
     }
     
+#boton-competencias:focus{
+  box-shadow: 0px 1px 0px hsl(310, 59%, 88%),
+  0px 2px 0px hsl(310,59%,86%),
+  0px 3px 0px hsl(310,59%,84%),
+}
+
     @media only screen and (max-width: 600px) {
       .margen2{
       margin-left: 70px;
@@ -275,9 +281,10 @@ border-width: 5px;
     }
 
     #enviar:hover{
-    box-shadow: 3px 0px 30px #0f0f0f;
+    box-shadow: 3px 0px 10px #5c5a5a;
     opacity: 10;
     }
+
     #cancelar {
       display: block;
       width: 100%;
@@ -378,12 +385,6 @@ margin-top: -70px;
 display: none;
 }
 
-/*
-.grupo_correcto .validación {
-  color: green;
-  opacity: 1;
-} */
-
 
 .grupo_incorrecto .form_label {
 color:red;
@@ -392,6 +393,8 @@ color:red;
 .grupo_incorrecto .form_input {
   border: 3px solid red;
 }
+
+
 
 
 .material-symbols-outlined {
@@ -403,7 +406,11 @@ color:red;
 }
 
 #exclamacion {
-  margin-right: 10px;
+  display: none;
+}
+
+.exclamacion_activo {
+  display: block;
 }
 
 /* .prueba1{
@@ -415,4 +422,3 @@ color:red;
   }*/
 
 
-  
