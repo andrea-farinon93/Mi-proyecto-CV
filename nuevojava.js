@@ -109,3 +109,36 @@ formulario.reset ();
 document.querySelectorAll('.grupo i').classList.remove('validacion_activo', 'material-symbols-outlined'); 
 document.querySelectorAll('.grupo i').classList.add('validacion');
 }});
+
+
+
+//llamando a Random User Generador API//
+const foto= document.querySelector('#perfil');
+const correo= document.querySelector('#correo');
+const telefono= document.querySelector('#tel');
+const nombre=document.querySelector('#nombre');
+const apellido=document.querySelector('#apellido');
+const direccion=document.querySelector('#direccion');
+const edad=document.querySelector('#edad');
+
+
+const generarusuario= async() => {
+  const url= 'https://randomuser.me/api/?nat=es&gender=female'
+  const respuesta= await fetch (url);
+  const {results} = await respuesta.json();
+  const datos= results [0];
+  foto.src=datos.picture.medium
+  correo.textContent = datos.email
+  nombre.textContent = datos.name.first
+  apellido.textContent = datos.name.last
+  telefono.textContent= datos.phone
+  edad.textContent = datos.dob.age
+  direccion.textContent=datos.location;street
+}
+
+document.addEventListener('DOMContentLoaded', generarusuario)
+
+
+        
+        
+   
