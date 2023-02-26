@@ -20,14 +20,16 @@
 
 
 <body>
-    <head>
+
+  <!--head (foto, nombre y redes)-->
+  <head>
     <div class="encabezado" class="container-fluid">
         <div id="fondo" class="row mx-0"> 
             <div class="col-sm-4">
                 <img id="perfil" src="">
             </div>
-            <div class="col-sm-8">
-                <h1 id="tituloprincipal" class="encabezado"><span id="nombre"></span> <span id="apellido"></span></h1> 
+            <div id="encabezado2" class="col-sm-8">
+                <h1 id="tituloprincipal"><span id="nombre"></span> <span id="apellido"></span></h1> 
               <div id="redes" class="redes_sociales">
                 <a href="#"><img src="imagenes/facebook.jpg" alt="facebook"></a>
                 <a href="#"><img src="imagenes/twitter.jpg" alt="twitter"></a>
@@ -37,167 +39,165 @@
             </div>
         </div>
         </div>
-    </div>
-    </head>
+  </head>
 
- 
-    <div class="container-fluid">
-            <div class="row"> 
-                <section id="margen_seccion" class="col-sm-5 col-lg-4">
-            <h2>Datos personales</h2> 
-            <h6>Edad: <span id="edad"></span></h6>
-            <h6>Correo electrónico: <span id="correo"></span></h6>
-            <h6>Télefono: <span id="tel"></span></h6>
-            <h6>Dirección: <span id="direccion"></span></h6>
+ <!--seccion 1 - Datos personales, perfil profesional y aptitudes--> 
+<div class="container-fluid">
+  <div class="row"> 
+    <section id="margen_seccion" class="col-sm-5 col-lg-4">
+<!--datos personales-->
+       <h2>Datos personales</h2> 
+       <h6>Edad: <span id="edad"></span></h6>
+       <h6>Correo electrónico: <span id="correo"></span></h6>
+       <h6>Télefono: <span id="tel"></span></h6>
+       <h6>Dirección: <span id="direccion"></span></h6>
+       <hr>
+<!--perfil profesional-->
+       <h2>Perfil Profesional</h2>
+       <p>Desarrollador front end con 8 años de experiencia dirigiendo proyectos de diseño de páginas web. Enfocado en la creación de códigos claros que además brinden una experiencia agradable al usuario. Capacitado para cumplir con los objetivos y las necesidades del cliente.</p>
+       <hr>
+<!--aptitudes-->
+       <h2>Aptitudes</h2>
+          <ul>
+             <li> Conocimientos de frameworks</li>
+             <li> Dominio de lenguajes de programación</li>
+             <li> Habilidad para el trabajo individual y en equipo</li>
+             <li> Capacidad de comunicación y adaptación a los cambios</li>
+             <li> Resolución de problemas</li>
+             <li> Interés por la innovación tecnológica</li>
+             <li> Personalidad analítica</li>
+          </ul>
+    </section>
 
-            <hr>
-             
-            <h2>Perfil Profesional</h2>
-            <p>Desarrollador front end con 8 años de experiencia dirigiendo proyectos de diseño de páginas web. Enfocado en la creación de códigos claros que además brinden una experiencia agradable al usuario. Capacitado para cumplir con los objetivos y las necesidades del cliente.</p>
-       
-            <hr>
+<!--Sección 2 - Experiencia laboral-->
+    <section id="margen" class="col-sm-7 col-lg-5">
+      <h2>Experiencia Laboral</h2>
+      <p>02/2023-Actual</p>
+      <p><strong>SAC Diseño Web</strong>-Buenos Aires</p>
+      <p>Desarrollador front end</p>
+      <ul>
+        <li>Optimización del rendimiento y la capacidad de respuesta de las aplicaciones</li>
+        <li>Maquetación y desarrollo web fron-tend</li>
+        <li>Manejo de datos XML, JSON</li>
+      </ul>
+      <p>05/2018-01/2022 </p>
+      <p><strong>Centzon Agencia de Diseño Web</strong> - Buenos Aires</p>
+      <p>Desarrollador front end</p>
+      <ul>
+        <li>Diseño de desarrollo y proyectos web</li>
+        <li>Creación de aplicaciones con PHP, HTML, JAVA SCRIPT y CSS</li>
+        <li>Realización de test de aplicaciones</li>
+        <li>Solución de incidencias</li>
+      </ul>
+      <p>09/2015-12/2017</p>
+      <p><strong>Neoshihara</strong> - Buenos Aires</p>
+      <p>Desarrollador front end</p>
+      <ul></ul>
+        <li>Toma de requerimiento a clientes</li>
+        <li>Soporte Técnico a clientes</li>
+        <li>Desarrollo de aplicaciones con PHP, JavaScript, HTML y CSS</li>
+    </Section>
 
-            <h2>Aptitudes</h2>
-            <ul>
-                <li> Conocimientos de frameworks</li>
-                <li> Dominio de lenguajes de programación</li>
-                <li> Habilidad para el trabajo individual y en equipo</li>
-                <li> Capacidad de comunicación y adaptación a los cambios</li>
-                <li> Resolución de problemas</li>
-                <li> Interés por la innovación tecnológica</li>
-                <li> Personalidad analítica</li>
-            </ul>
-                 </section>
-
-                 <section id="margen" class="col-sm-7 col-lg-5">
-                    <h2>Experiencia Laboral</h2>
-                    <p>02/2023-Actual</p>
-                    <p><strong>SAC Diseño Web</strong>-Buenos Aires</p>
-                    <p>Desarrollador front end</p>
-                    <ul>
-                        <li>Optimización del rendimiento y la capacidad de respuesta de las aplicaciones</li>
-                        <li>Maquetación y desarrollo web fron-tend</li>
-                        <li>Manejo de datos XML, JSON</li>
-                    </ul>
-            
-            
-                    <p>05/2018-01/2022 </p>
-                    <p><strong>Centzon Agencia de Diseño Web</strong> - Buenos Aires</p>
-                    <p>Desarrollador front end</p>
-                    <ul>
-                        <li>Diseño de desarrollo y proyectos web</li>
-                        <li>Creación de aplicaciones con PHP, HTML, JAVA SCRIPT y CSS</li>
-                        <li>Realización de test de aplicaciones</li>
-                        <li>Solución de incidencias</li>
-                    </ul>
-            
-            
-                    <p>09/2015-12/2017</p>
-                    <p><strong>Neoshihara</strong> - Buenos Aires</p>
-                    <p>Desarrollador front end</p>
-                    <ul></ul>
-                    <li>Toma de requerimiento a clientes</li>
-                    <li>Soporte Técnico a clientes</li>
-                    <li>Desarrollo de aplicaciones con PHP, JavaScript, HTML y CSS</li>
-                </Section>
-
-                <aside id="sec_competencias" class="col-sm-12 col-lg-3">
-                  <div class="margen2" class="container-fluid">
-                <div class="row">
-                        <button id="boton-competencias"class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#competencias" aria-expanded="false" aria-controls="competencias">
-                          Competencias
-                        </button>
-                </div>
-                    <div style="min-height: 120px;">
-                        <div class="collapse collapse-horizontal" id="competencias">
-                          <div class="card card-body" style="width: 200px;">
-                    <p>HTML, CSS Y JavaScript</p>
+<!--Asise: competencias y articulo con proyectos personales-->
+    <aside id="sec_competencias" class="col-sm-12 col-lg-3">
+      <div class="margen2" class="container-fluid">
+        <div class="row">
+            <button id="boton-competencias"class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#competencias" aria-expanded="false" aria-controls="competencias">
+              Competencias
+            </button>
+            </div>
+              <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="competencias">
+                <div class="card card-body" style="width: 200px;">
+                  <p>HTML, CSS Y JavaScript</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-green progress-bar-striped" role="progressbar"
-                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-                          100% 
-                        </div>
-                      </div>
-                    <br>
-                    <p>Laravel</p>
+                    <div class="progress-bar progress-bar-green progress-bar-striped" role="progressbar"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                    100% 
+                    </div>
+                    </div>
+                   <br>
+                  <p>Laravel</p>
                     <div class="progress">
                     <div class="progress-bar progress-bar-orange progress-bar-striped" role="progressbar"
                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                      40% 
+                    40% 
                     </div>
                     </div>
                     <br>
-                    <p>Python</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-blue progress-bar-striped" role="progressbar"
-                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                          60%
-                        </div>
-                    </div>
-                    <br>
+                  <p>Python</p>
+                     <div class="progress">
+                     <div class="progress-bar progress-bar-blue progress-bar-striped" role="progressbar"
+                      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                      60%
+                      </div>
+                      </div>
+                      <br>
                     <p>PHP</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-blue progress-bar-striped" role="progressbar"
-                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                          60% 
-                        </div>
+                      <div class="progress">
+                      <div class="progress-bar progress-bar-blue progress-bar-striped" role="progressbar"
+                       aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                      60% 
+                      </div>
                       </div>
                       <br>
-                    <div>
-                    <h2>Idiomas</h2>
-                    <p>Español: idioma nativo </p>
-                    <div class="progress">
+                      <div>
+                        <h2>Idiomas</h2>
+                        <p>Español: idioma nativo </p>
+                        <div class="progress">
                         <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100" style="width:100%">
-                          100% 
-                        </div>
-                      </div>
-                      <br>
-                    <p>Inlés: Avanzado </p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="80"
-                        aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                         aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                         100% 
+                         </div>
+                         </div>
+                         <br>
+                          <p>Inlés: Avanzado </p>
+                          <div class="progress">
+                          <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="80"
+                          aria-valuemin="0" aria-valuemax="100" style="width:80%">
                           80% 
-                        </div>
+                          </div>
+                          </div>
                       </div>
-                    </div>
                      </div>
-                    </div>
-
+                  </div>
                 <br>
-                    <article>
-                    <a href="article.html">
-                      <img src="imagenes/articulo.webp"> <!--articulo-->
-                      <h5>Proyectos personales</h5>
-                    </a>
-                    <p>Apps Moviles</p>
-                    </article>
-                </div>
-              </div>
-                </aside>
-
+<!--articulo con proyectos personales-->
+            <article>
+              <a href="article.html">
+              <img src="imagenes/articulo.webp"> <!--articulo-->
+              <h5>Proyectos personales</h5>
+              </a>
+              <p>Apps Moviles</p>
+            </article>
             </div>
-    </div>
-    <hr>
-    <div class="container-fluid">
-      <div class="row"> 
-        <section id="formacion">
-          <div class="col-sm-6 col-lg-6">
-            <h2>Formación Académica</h2>
-            <p>12/2014</p>
-            <p><strong>Universidad Nacional del Nordeste</strong></p>
-            <p>Licenciatura en sistemas de información </p>
-          </div> 
-          
-          <div class="col-sm-6 col-lg-6">
-            <h2>Formación Adicional</h2>
-            <p>Curso primeros pasos en desarrollo front end</p>
-            <p>Curso desarrollador Full Stack</p>
-         </div>
-        </section>
         </div>
+      </aside>
     </div>
+  </div>
+  <hr>
 
+<!--Formación Academica y adicional-->
+<div class="container-fluid">
+  <div class="row"> 
+    <section id="formacion">
+      <div class="col-sm-6 col-lg-6">
+        <h2>Formación Académica</h2>
+        <p>12/2014</p>
+        <p><strong>Universidad Nacional del Nordeste</strong></p>
+        <p>Licenciatura en sistemas de información </p>
+      </div> 
+          
+      <div class="col-sm-6 col-lg-6">
+        <h2>Formación Adicional</h2>
+        <p>Curso primeros pasos en desarrollo front end</p>
+        <p>Curso desarrollador Full Stack</p>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!--footer-->
 <footer class="container-fluid">
   <div class="row">
     <div class="col-sm-12 col-lg-12" >
@@ -215,15 +215,17 @@
       </div>
         <div class="flex">
         <input type="button" value="Imprimir CV" onclick="window.print()" />
-        </div>
+      </div>
     </div>
   </div>
 </footer>
 
 
-
+<!--formulario-->
 <form name="formulario" id="formulario" action="">
   <h1 class="formtitulo">Contáctame</h1>
+
+<!--grupo nombre-->
 <div Class="grupo" id="grupo_nombre">
   <label for="form_input" class="form_label">Nombre</label>
   <input type="text" class="form_input" name="nombre">
@@ -232,8 +234,7 @@
     <p class="advertencia">Este campo es obligatorio</p>
   </div>
 </div>
-
-
+<!--grupo email-->
 <div Class="grupo" id="grupo_email">
   <label for="form_input" class="form_label">E-mail</label>
   <input type="email" class="form_input" name="email">
@@ -242,7 +243,7 @@
     <p class="advertencia">Este campo es obligatorio <br> Debe contener @</p>
   </div>
 </div>
-
+<!--grupo telefono-->
 <div Class="grupo" id="grupo_telefono">
   <label for="form_input" class="form_label">Télefono</label>
   <input type="tel" class="form_input" name="telefono">
@@ -251,7 +252,7 @@
     <p class="advertencia">Este campo es obligatorio</p>
   </div>
 </div>
-
+<!--grupo mensaje-->
 <div Class="grupo" id="grupo_mensaje">
   <label for="form_input" class="form_label">Mensaje</label>
   <input type="text" class="form_input" name="mensaje">
@@ -260,6 +261,9 @@
     <p class="advertencia">Este campo es obligatorio</p>
   </div>
 </div>
+
+
+<!--mensaje de error y exito-->
 
 <div id="Error_mensaje">
   <p class="error">Completar todos los campos </p>
@@ -276,7 +280,6 @@
 
 
     <script src="nuevojava.js"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 </html>

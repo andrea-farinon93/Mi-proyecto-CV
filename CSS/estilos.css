@@ -17,9 +17,6 @@
     margin-left: 0%;
   }
 
-  #formacion {
-    padding-top: 0px;
-  }
 
   /*para computadora*/
   [class*="col-"] {
@@ -105,9 +102,12 @@
     }
   }
 
+
+  /*encabezado de pagina (imagen-fondo-nombre-iconos de redes)*/
   .encabezado {
     text-align: center;
   }
+
 #perfil{
   width: 200px;
   margin-top: 30px;
@@ -141,7 +141,7 @@
   display: inline-flex;
  }
     
-
+/*linea que delimita secciones*/
     
 hr {
 	height: 6px;
@@ -155,8 +155,8 @@ hr {
 );
 }
 
-
-    #boton-competencias{
+/*seccion competencias*/
+#boton-competencias{
       border: none;
       background-color: hsl(298, 28%, 81%);
       padding: 15px 70px 15px 70px;
@@ -165,11 +165,11 @@ hr {
       font-family: 'Public Sans', bold 900;
       font-size: large;
       box-shadow: 0px 2px 0px hsl(310, 97%, 47%),
-0px 4px 0px hsl(310,97%,45%),
-0px 6px 0px hsl(310,97%,44%),
-0px 8px 0px hsl(310,97%,43%),
-0px 10px 0px hsl(310,97%,29%),
-0px 11px 10px #000;
+                  0px 4px 0px hsl(310,97%,45%),
+                  0px 6px 0px hsl(310,97%,44%),
+                  0px 8px 0px hsl(310,97%,43%),
+                  0px 10px 0px hsl(310,97%,29%),
+                  0px 11px 10px #000;
     }
     
 #boton-competencias:focus{
@@ -191,21 +191,6 @@ hr {
   background-color: rgb(43, 26, 189) !important;
 }
 
-  
-    #margen {
-      padding-bottom:0px;
-      margin-bottom:0px;
-    }
-    
-    .material-symbols-outlined {
-      font-variation-settings:
-      'FILL' 0,
-      'wght' 400,
-      'GRAD' 0,
-      'opsz' 48
-    }
-    
-
 article a img {
   width: 200px;
 }
@@ -214,124 +199,121 @@ article a {
   font-size: 10px;
 }
 
+
+/*margenes de las tres secciones (datos personales, formacion profesional y competencias)*/
+#margen {
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+
+
+/*footer (formulario e imprimir) */
 footer{
   padding-top: 30px;
   background-color: #cabeca;
   border-top: #604da3;
   border-style: ridge;
-border-width: 5px;
+  border-width: 5px;
 }
 
 #servicios{
-    font-family: 'Lora', serif;
-    font-size: 1em;
-    color:#000;
+font-family: 'Lora', serif;
+font-size: 1em;
+color:#000;
 }
-    .flex{
-      display:flex;
-      justify-content: center;
-    }
+.flex{
+  display:flex;
+  justify-content: center;
+}
 
-    #contacto {
-      text-align: center;
-    }
-
-    form {
-      width: 400px;
-      max-width: 100%;
-      margin:auto;
-      margin-top: 30px;
-      padding: 20px;
-      box-shadow: 0 0 20px 1px #0000004d;
-      position:relative;
-    }
-
-    .formtitulo {
-      font-size:larger;
-      text-align: center;
-      color:#202020
-    }
-
-    .form_input, .form_label, #enviar {
-      display:block;
-      width: 100%;
-      font-size: 20px;
-    }
-
-    .form_input{
-      background: #d8d4e6;
-      opacity: 0.6;
-      padding: 20px;
-      border: 1px solid #202020;
-      margin: 30px 0px 10px 0px;
-    }
-
-    .form_label {
-      padding-left: 15px;
-      position:absolute;
-      margin-top: 10px;
-      
-    }
-
-    #enviar {
-      
-      background-color: #414444;
-      opacity: 0.8;
-      cursor: pointer;
-      color: #faf6f6;
-      margin: 30px 0px 10px 0px;
-      border-radius: 3px;
-    
-    }
-
-    #enviar:hover{
-    box-shadow: 3px 0px 10px #5c5a5a;
-    opacity: 10;
-    }
-
-    #cancelar {
-      width: 100%;
-      border-right:#202020;
-      border-radius: 5px;
-      background-color: transparent;
-      color:#000;
-      margin: 30px 0px 10px 0px;
-    }
-    
-  
-    #formulario {
-      position:absolute;
-      background: aliceblue;
-      z-index: 2;
-      margin-left: 500px;
-      margin-top: -950px;
-      padding-top: -30px;
-      padding-bottom: 70px;
-    }
-
-    #abrir {
-      margin-bottom: 10px;
-    }
-
-    
- 
-
-.advertencias {
-  width: 200px;
+#contacto {
   text-align: center;
-  margin: auto;
-  color: #202020;
-  padding-top: 20px;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+
+#abrir {
+  margin-bottom: 10px;
 }
 
+
+
+/*formulario*/
+form {
+  width: 400px;
+  max-width: 100%;
+  margin:auto;
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: 0 0 20px 1px #0000004d;
+  position:relative;
+}
+
+.formtitulo {
+  font-size:larger;
+  text-align: center;
+  color:#202020
+}
+
+.form_input, .form_label, #enviar {
+  display:block;
+  width: 100%;
+  font-size: 20px;
+}
+
+.form_input{
+  background: #d8d4e6;
+  opacity: 0.6;
+  padding: 20px;
+  border: 1px solid #202020;
+  margin: 30px 0px 10px 0px;
+}
+
+.form_label {
+  padding-left: 15px;
+  position:absolute;
+  margin-top: 10px;
+  
+}
+
+/*boton enviar y cancelar del formulario*/
+#enviar {
+  
+  background-color: #414444;
+  opacity: 0.8;
+  cursor: pointer;
+  color: #faf6f6;
+  margin: 30px 0px 10px 0px;
+  border-radius: 3px;
+
+}
+
+#enviar:hover{
+box-shadow: 3px 0px 10px #5c5a5a;
+opacity: 10;
+}
+
+#cancelar {
+  width: 100%;
+  border-right:#202020;
+  border-radius: 5px;
+  background-color: transparent;
+  color:#000;
+  margin: 30px 0px 10px 0px;
+}
+
+/*posicion del formulario sobre los demas elementos de la pagina*/
+#formulario {
+  position:absolute;
+  background: aliceblue;
+  z-index: 2;
+  margin-left: 500px;
+  margin-top: -950px;
+  padding-top: -30px;
+  padding-bottom: 70px;
+}
+
+
+/*estilo del icono cuando el valor del input sea correcto */
 .validacion_activo {
 color: green;
 position:absolute;
@@ -345,15 +327,25 @@ display: block;
   display: none;
 }
 
+/*estilo para la validación por campo: negativa*/
+.grupo_incorrecto .form_label {
+  color:red;
+  }
+  
+.grupo_incorrecto .form_input {
+    border: 3px solid red;
+  }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+
+/* mensaje de advertencia cuando el valor del input sea incorrecto*/
+
+.advertencias {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #202020;
+  padding-top: 20px;
 }
-
 
 .advertencia {
   display: none;
@@ -362,52 +354,20 @@ display: block;
 .advertencia_activo {
   display: block;
 }
-
-
-
-.exito_activo {
-color: green;
-margin-top:  30px;
-padding-top: 15px;
-display: block;
-font-size: 15px;
-}
-
-.exito {
-  display: none;
-}
-
-
-.grupo_incorrecto .form_label {
-color:red;
-}
-
-.grupo_incorrecto .form_input {
-  border: 3px solid red;
-}
-
-
-
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48,
-}
-
+  
+  /*agregar y quitar el mensaje "completar todos los campos*/
 .error {
-  display: none;
-}
-
+    display: none;
+  }
+  
 .error_activo {
-  margin-left: 40px;
-  display: block;
-  color: red;
-}
+    margin-left: 40px;
+    display: block;
+    color: red;
+  }
 
 
+/*agregar y quitar icono del mensaje "completar todos los campos" para la validacion*/
 .stop {
   display: none;
 }
@@ -420,17 +380,29 @@ color:red;
   color: red;
 }
 
-/* .prueba1{
-    color:#dd0fdd;
+
+/*mensaje: enviado exitosamente*/
+.exito_activo {
+  color: green;
+  margin-top:  30px;
+  padding-top: 15px;
+  display: block;
+  font-size: 15px;
   }
+  
+.exito {
+    display: none;
+  }
+    
 
-  .prueba2{
-    color:rgb(5, 117, 214);
-  }*/
-
-
-
-
+/*clase para iconos de googleicons*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
 
   
   
