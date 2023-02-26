@@ -18,14 +18,12 @@
   }
 
 
-  /*para computadora*/
   [class*="col-"] {
     float: left;
     padding: 15px;
   }
   
   
- /* para celular */
 [class*="col-"] {
     width: 100%;
   }
@@ -238,14 +236,14 @@ color:#000;
 
 
 /*formulario*/
+
 form {
-  width: 400px;
   max-width: 100%;
   margin:auto;
   margin-top: 30px;
   padding: 20px;
   box-shadow: 0 0 20px 1px #0000004d;
-  position:relative;
+
 }
 
 .formtitulo {
@@ -265,13 +263,13 @@ form {
   opacity: 0.6;
   padding: 20px;
   border: 1px solid #202020;
-  margin: 30px 0px 10px 0px;
+  margin: 40px 0px 10px 0px;
 }
 
 .form_label {
   padding-left: 15px;
   position:absolute;
-  margin-top: 10px;
+  margin-top: -33px;
   
 }
 
@@ -304,12 +302,16 @@ opacity: 10;
 /*posicion del formulario sobre los demas elementos de la pagina*/
 #formulario {
   position:absolute;
+  left: 50%;
+  right: 50%;
   background: aliceblue;
   z-index: 2;
-  margin-left: 500px;
   margin-top: -950px;
   padding-top: -30px;
   padding-bottom: 70px;
+
+
+  
 }
 
 
