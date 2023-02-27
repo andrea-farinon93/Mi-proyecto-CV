@@ -50,7 +50,7 @@
        <h6>Edad: <span id="edad"></span></h6>
        <h6>Correo electrónico: <span id="correo"></span></h6>
        <h6>Télefono: <span id="tel"></span></h6>
-       <h6>Dirección: <span id="direccion"></span></h6>
+       <h6>Dirección: <span id="ciudad"></span> - <span id="estado"></span> - <span id="pais"></span></h6>
        <hr>
 <!--perfil profesional-->
        <h2>Perfil Profesional</h2>
@@ -99,16 +99,16 @@
     </Section>
 
 <!--Asise: competencias y articulo con proyectos personales-->
-    <aside id="sec_competencias" class="col-sm-12 col-lg-3">
+    <aside class="col-sm-12 col-lg-3">
       <div class="margen2" class="container-fluid">
-        <div class="row">
+        <div id="soyelboton" class="row">
             <button id="boton-competencias"class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#competencias" aria-expanded="false" aria-controls="competencias">
               Competencias
             </button>
             </div>
               <div style="min-height: 120px;">
                 <div class="collapse collapse-horizontal" id="competencias">
-                <div class="card card-body" style="width: 200px;">
+                <div class="card card-body" >
                   <p>HTML, CSS Y JavaScript</p>
                     <div class="progress">
                     <div class="progress-bar progress-bar-green progress-bar-striped" role="progressbar"
@@ -205,6 +205,7 @@
       <p id="servicios">
        Te interesan mis servicios? Contáctame 
       </p>
+      <p>⇣</p>
 
       <button id="abrir" >
        <span class="material-symbols-outlined">
@@ -235,7 +236,7 @@
   <i class="validacion" class="material-symbols-outlined">check_circle</i>
   </div>
   <div>
-    <p class="advertencia">Este campo es obligatorio</p>
+    <p class="advertencia">Este campo es obligatorio <br> Debe contener entre 5 y 30 caracteres</p>
   </div>
 </div>
 <!--grupo email-->
@@ -246,7 +247,7 @@
   <i class="validacion" class="material-symbols-outlined">check_circle</i>
   </div>
   <div>
-    <p class="advertencia">Este campo es obligatorio <br> Debe contener @</p>
+    <p class="advertencia">Este campo es obligatorio <br> Debe contener @ y dominio (.) <br> (ej: Lucas@gmail.com)</p>
   </div>
 </div>
 <!--grupo telefono-->
@@ -268,7 +269,7 @@
   <i class="validacion" class="material-symbols-outlined">check_circle</i>
 </div>
   <div>
-    <p class="advertencia">Este campo es obligatorio</p>
+    <p class="advertencia">Este campo es obligatorio <br>Máximo de caracteres: 100</p>
   </div>
 </div>
 

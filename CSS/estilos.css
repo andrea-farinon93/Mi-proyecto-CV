@@ -70,6 +70,8 @@
     text-align: center;
   }
 
+
+
 #perfil{
   width: 200px;
   margin-top: 30px;
@@ -86,9 +88,14 @@
 #tituloprincipal{
     margin-top: 45px;
     font-family: 'Lora', serif;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  #tituloprincipal{
+    font-size: 2em;
+}}
 
 #redes{
   text-align: center;
@@ -103,6 +110,17 @@
   display: inline-flex;
  }
     
+ @media only screen and (min-width: 1000px) {
+  #tituloprincipal{
+    text-align: left;
+}
+   #redes{
+    text-align: left;
+		}} 
+
+
+
+
 /*linea que delimita secciones*/
     
 hr {
@@ -118,6 +136,20 @@ hr {
 }
 
 /*seccion competencias*/
+#competencias {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 991px) {
+#competencias {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}}
+
 #boton-competencias{
       width: 50%;
       text-align: center;
@@ -137,9 +169,7 @@ hr {
     }
     
 #boton-competencias:focus{
-  box-shadow: 0px 1px 0px hsl(310, 59%, 88%),
-  0px 2px 0px hsl(310,59%,86%),
-  0px 3px 0px hsl(310,59%,84%),
+  box-shadow:none,
 }
 
 #articulo{
@@ -148,7 +178,17 @@ hr {
 
 #proyectos {
   width:70%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+@media only screen and (min-width:401px) and (max-width:991px) {
+
+#proyectos {
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+}}
 
 @media only screen and (max-width: 400px) {
 
@@ -191,9 +231,9 @@ hr {
   #boton-competencias{
     padding-top: 3%;
     padding-bottom: 3%;
-    margin-left: 30%;
-    margin-right: 30%;
     font-size: 180%;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 
   #articulo{
@@ -218,7 +258,6 @@ hr {
     font-size: 120%;
   }
 }
-
 
 
 .progress-bar-green {

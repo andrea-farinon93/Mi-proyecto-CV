@@ -23,9 +23,9 @@ cancelar.addEventListener("click", function() {
 const formulario=document.getElementById('formulario');
 const inputs=document.querySelectorAll('#formulario input')
 const expresiones= {
-  nombre:/^[a-zA-ZÁ-ÿ\s]{1,15}$/,
-  correo: /^[^]{1,100}$/,
-  telefono: /^[a-zA-ZÁ-ÿ\s]{1,15}$/,
+  nombre:/^[a-zA-ZÁ]{5,30}$/,
+  correo: /^(.+)@(.+){1,5}\.\S+$/,
+  telefono: /^([0-9])*$/,
   mensaje: /^[^]{1,100}$/,
 }
 
@@ -120,8 +120,10 @@ const correo= document.querySelector('#correo');
 const telefono= document.querySelector('#tel');
 const nombre=document.querySelector('#nombre');
 const apellido=document.querySelector('#apellido');
-const direccion=document.querySelector('#direccion');
 const edad=document.querySelector('#edad');
+const ciudad=document.querySelector('#ciudad');
+const estado=document.querySelector('#estado');
+const pais=document.querySelector('#pais');
 
 
 const generarusuario= async() => {
@@ -135,7 +137,10 @@ const generarusuario= async() => {
   apellido.textContent = datos.name.last
   telefono.textContent= datos.phone
   edad.textContent = datos.dob.age
-  direccion.textContent=datos.location;street
+  ciudad.textContent = datos.location ['city']
+  estado.textContent = datos.location ['state']
+  pais.textContent = datos.location ['country']
+  
 }
 
 document.addEventListener('DOMContentLoaded', generarusuario)
