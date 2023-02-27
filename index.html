@@ -163,9 +163,9 @@
                   </div>
                 <br>
 <!--articulo con proyectos personales-->
-            <article>
+            <article id="articulo">
               <a href="article.html">
-              <img src="imagenes/articulo.webp"> <!--articulo-->
+              <img id="proyectos" src="imagenes/articulo.webp"> <!--articulo-->
               <h5>Proyectos personales</h5>
               </a>
               <p>Apps Moviles</p>
@@ -223,14 +223,17 @@
 
 <!--formulario-->
 
-<form name="formulario" id="formulario" action="" class="col- col-sm-7 col-md-6 col-lg-5 col-xl-4">
+<form name="formulario" id="formulario" action="">
   <h1 class="formtitulo">Contáctame</h1>
 
 <!--grupo nombre-->
+
 <div Class="grupo" id="grupo_nombre">
   <label for="form_input" class="form_label">Nombre</label>
   <input type="text" class="form_input" name="nombre">
+  <div class="eliminar">
   <i class="validacion" class="material-symbols-outlined">check_circle</i>
+  </div>
   <div>
     <p class="advertencia">Este campo es obligatorio</p>
   </div>
@@ -239,7 +242,9 @@
 <div Class="grupo" id="grupo_email">
   <label for="form_input" class="form_label">E-mail</label>
   <input type="email" class="form_input" name="email">
-  <i class="validacion"  class="material-symbols-outlined">check_circle</i>
+  <div class="eliminar">
+  <i class="validacion" class="material-symbols-outlined">check_circle</i>
+  </div>
   <div>
     <p class="advertencia">Este campo es obligatorio <br> Debe contener @</p>
   </div>
@@ -248,7 +253,9 @@
 <div Class="grupo" id="grupo_telefono">
   <label for="form_input" class="form_label">Télefono</label>
   <input type="tel" class="form_input" name="telefono">
+  <div class="eliminar">
   <i class="validacion" class="material-symbols-outlined">check_circle</i>
+  </div>
   <div>
     <p class="advertencia">Este campo es obligatorio</p>
   </div>
@@ -257,7 +264,9 @@
 <div Class="grupo" id="grupo_mensaje">
   <label for="form_input" class="form_label">Mensaje</label>
   <input type="text" class="form_input" name="mensaje">
+  <div class="eliminar">
   <i class="validacion" class="material-symbols-outlined">check_circle</i>
+</div>
   <div>
     <p class="advertencia">Este campo es obligatorio</p>
   </div>

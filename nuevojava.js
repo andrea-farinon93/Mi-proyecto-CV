@@ -87,17 +87,20 @@ formulario.reset ();
         document.querySelector('#mensaje p').classList.remove('exito_activo');
         document.querySelector('#mensaje p').classList.add('exito');
 
-      }, 5000);
+      }, 4000);
+      setTimeout (() => {
+      formulario.style.display='none'},5000);
       document.querySelector('#mensaje p').classList.remove('exito'); 
       document.querySelector('#Error_mensaje p').classList.remove('error_activo'); 
       document.querySelector('#Error_mensaje p').classList.add('error'); 
       document.querySelector('#Error_mensaje i').classList.remove('stop_activo', 'material-symbols-outlined'); 
       document.querySelector('#Error_mensaje i').classList.add('stop'); 
-      /*document.querySelectorAll('.grupo').forEach ((icono) => {
+      document.querySelectorAll('div.eliminar').forEach ((icono) => {
       icono.style.display= 'none';
-      });*/
+      });
     
 } else {
+
   document.querySelector('#Error_mensaje p').classList.add('error_activo');
   document.querySelector('#Error_mensaje i').classList.add('stop_activo', 'material-symbols-outlined'); 
   setTimeout (() => {
@@ -106,8 +109,7 @@ formulario.reset ();
   document.querySelector('#Error_mensaje i').classList.remove('stop_activo', 'material-symbols-outlined'); 
   document.querySelector('#Error_mensaje i').classList.add('stop'); 
 }, 5000);
-document.querySelectorAll('.grupo i').classList.remove('validacion_activo', 'material-symbols-outlined'); 
-document.querySelectorAll('.grupo i').classList.add('validacion');
+
 }});
 
 
