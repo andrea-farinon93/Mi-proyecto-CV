@@ -71,23 +71,29 @@
   }
 
 
-
 #perfil{
   width: 200px;
   margin-top: 30px;
   border-style: ridge;
-  border-radius: 10px;
-}
-#fondo {
-  background-image : url(../imagenes/44.png);
-  background-clip:border-box;
-  border-style: ridge;
-  border-width: 5px;
+  
+  border-radius: 60%;
 }
 
+#fondo{
+  background: #4e15159d;
+  animation: mymove 5s infinite;
+
+}
+
+@keyframes mymove {
+  from {background-color: #4e15159d}
+  to {background-color: rgba(255, 60, 0, 0.452);}
+}
+
+ 
 #tituloprincipal{
     margin-top: 45px;
-    font-family: 'Lora', serif;
+    font-family: 'Lucida Handwriting';
     font-size: 3em;
     text-align: center;
 }
@@ -103,9 +109,9 @@
 		}
 
 .redes_sociales img {
-  border: 1px solid #b9aeae;
-  border-radius: 45px;
-  padding: 5px #eed4d4;
+  border: 3px ridge #b9aeae;
+  border-radius: 80px;
+  padding: 6px rgba(134, 132, 132, 0.233);
   width: 70px;
   display: inline-flex;
  }
@@ -119,7 +125,13 @@
 		}} 
 
 
-
+/*Seccion datos personales*/
+#datos {
+  background-color: hsla(335, 55%, 71%, 0.219);
+  background-clip:border-box;
+  border-bottom: ridge;
+  border-width: 5px;
+}
 
 /*linea que delimita secciones*/
     
@@ -134,6 +146,7 @@ hr {
     red 100%     
 );
 }
+
 
 /*seccion competencias*/
 #competencias {
@@ -282,8 +295,9 @@ article a {
 #margen {
   padding-bottom:0px;
   margin-bottom:0px;
-  margin-right: 0%;
   padding-right: 0%;
+  border-bottom: ridge;
+  border-width: 5px;
 }
 
 #margin_seccion{
@@ -295,6 +309,16 @@ article a {
   margin-right: 20%;
 }
 
+#aside_1 {
+  border-bottom: ridge;
+  border-width: 5px;
+}
+
+#formacion {
+  margin-top: 0%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
 /*footer (formulario e imprimir) */
 footer{
   padding-top: 30px;
